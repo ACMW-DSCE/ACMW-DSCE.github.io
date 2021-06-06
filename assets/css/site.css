@@ -386,11 +386,11 @@ footer .contact-us-form-header {
   font-size: 0.9375rem;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .copyright-text {
     margin-top: 4.66em;
   }
-}
+} */
 
 /* our teams section */
 
