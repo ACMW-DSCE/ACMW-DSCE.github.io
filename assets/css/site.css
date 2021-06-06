@@ -273,7 +273,7 @@ header main {
 footer {
   background-image: url("../images/Footer-Bg.jpg");
   background-size: cover;
-  height:100vh;
+ 
 }
 
 footer h4 {
@@ -381,16 +381,6 @@ footer .contact-us-form-header {
   }
 }
 
-.copyright-text {
-/*   margin-top: 5.25em; */
-  font-size: 0.9375rem;
-}
-
-/* @media (min-width: 1024px) {
-  .copyright-text {
-    margin-top: 4.66em;
-  }
-} */
 
 /* our teams section */
 
