@@ -276,6 +276,12 @@ footer {
  
 }
 
+@media(max-width:426px){
+  footer{
+    height:180vh;
+  }
+}
+
 footer h4 {
   font-size: 1.75rem;
 }
