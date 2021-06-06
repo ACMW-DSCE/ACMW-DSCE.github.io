@@ -278,7 +278,7 @@ footer {
 
 @media (min-width: 768px) {
   footer {
-    height: 90vh;
+    height: 100vh;
   }
 }
 
