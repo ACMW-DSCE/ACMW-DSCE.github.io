@@ -276,11 +276,11 @@ footer {
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   footer {
     height: 100vh;
   }
-}
+} */
 
 footer h4 {
   font-size: 1.75rem;
