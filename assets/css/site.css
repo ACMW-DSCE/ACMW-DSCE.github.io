@@ -272,14 +272,7 @@ header main {
 
 footer {
   background-image: url("../images/Footer-Bg.jpg");
-  height: 180vh;
   background-size: cover;
-}
-
-@media (min-width: 768px) {
-  footer {
-    height: 90vh;
-  }
 }
 
 footer h4 {
