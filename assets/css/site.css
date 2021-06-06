@@ -1,7 +1,560 @@
 * {
-  margin : 0;
-  paddng: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  transition: all 0.5s ease-in;
 }
 
+.move {
+  opacity: 0;
+  margin-top: 100px;
+}
 
+/* navigation */
+
+.navbar-brand img {
+  width: 100px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #193574;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-link:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+/* home section */
+
+header {
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-top: 150px;
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 4.5rem;
+  }
+
+  header {
+    height: 110vh;
+  }
+
+  header h1 br {
+    display: none;
+  }
+}
+
+.home-video {
+  height: 100vh;
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: 100vh;
+  }
+
+  .home-video {
+    max-width: 100%;
+    height: 120vh;
+  }
+}
+
+header main {
+  position: absolute;
+  margin-top: 10%;
+}
+
+.image-container {
+  width: 90%;
+}
+
+.header-img {
+  margin-top: 2em;
+  width: 100%;
+}
+
+@media (min-width: 425px) {
+  .image-container {
+    width: 82%;
+  }
+
+  .header-img {
+    margin-top: 1em;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-container {
+    width: 75%;
+  }
+
+  .header-img {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.header-btn {
+  background-color: #e7e0ed;
+  border-radius: 1.25em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  box-shadow: inset 0 0 0 #fff;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #193574;
+}
+
+.header-btn:hover {
+  box-shadow: inset 200px 0 0 0 #193574;
+  color: #fff;
+}
+
+/* about us */
+.about-us {
+  margin-top: -20px;
+  background-color: #f0f2f6;
+  scroll-margin-top: 3em;
+}
+
+@media (min-width: 1440px) {
+  .about-us {
+    margin-top: -10px;
+  }
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 425px) {
+  .about-us h2 {
+    font-size: 3rem;
+  }
+}
+
+.about-us h3 {
+  color: #193574;
+}
+
+.about-us img {
+  width: 100%;
+}
+
+/* our heads */
+
+.our-heads {
+  background-color: #193574;
+}
+
+.our-heads h2 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 375px) {
+  .our-heads h2 {
+    font-size: 3rem;
+  }
+}
+
+.our-heads img {
+  width: 45%;
+  border-radius: 50%;
+}
+
+.heads-card {
+  background-color: #f2f9f9;
+  width: 250px;
+  height: 350px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heads-card {
+    width: 215px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .heads-card {
+    width: 220px;
+  }
+}
+
+.heads-card p img {
+  width: 18%;
+  border-radius: 5px;
+}
+
+.teams-info-link {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .teams-info-link {
+    font-size: 2rem;
+  }
+}
+
+/* events section */
+
+.events-block {
+  background-color: #f0f2f6;
+}
+
+@media (min-width: 1440px) {
+  .events-block {
+    height: 110vh;
+  }
+}
+
+.events-block h2 {
+  font-size: 3rem;
+}
+
+.events-block h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #193574;
+}
+
+.events-block .image-container {
+  width: 250px;
+}
+
+.events-block img {
+  max-width: 100%;
+  height: 200px;
+}
+
+/* footer */
+
+footer {
+  background-image: url("../images/Footer-Bg.jpg");
+  height: 180vh;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 90vh;
+  }
+}
+
+footer h4 {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer-img {
+  max-width: 100%;
+}
+
+.contact-us-form {
+  width: 100%;
+  height: 60%;
+}
+
+footer .contact-us-form-header {
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 1024px) {
+  footer .contact-us-form-header {
+    margin-bottom: 1em;
+  }
+}
+
+.contact-us-form input {
+  width: 90%;
+  padding-bottom: 0.5em;
+  margin-top: 2em;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .contact-us-form input {
+    width: 100%;
+  }
+}
+
+.contact-us-form input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.contact-us-form button {
+  background: #e7e0ed;
+  margin-top: 2.77em;
+  border-radius: 1.11em;
+  padding: 0.33em 1.66em 0.33em 1.66em;
+  font-size: 1.125rem;
+  box-shadow: inset 0 0 0 #e7e0ed;
+  transition: all 0.3s ease-in;
+}
+
+.contact-us-form button:hover {
+  box-shadow: inset 120px 0 0 0 #193574;
+  color: #fff;
+}
+
+.social-buttons {
+  width: 100%;
+  height: 60%;
+}
+
+.social-buttons button {
+  background-color: #f0f2f6;
+  width: 60%;
+  padding: 0.75em 0;
+  border-radius: 1.75em;
+  margin-top: 2em;
+  font-size: 1.125rem;
+  color: #193574;
+  box-shadow: inset 0 0 0 #f0f2f6;
+  transition: all 0.3s ease-in;
+}
+
+.social-buttons button:hover {
+  box-shadow: inset 200px 0 0 0 #193574;
+  color: #fff;
+}
+
+.social-buttons button img {
+  width: 1.66em;
+  border-radius: 0.38em;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .social-buttons button {
+    width: 90%;
+    padding: 0.7em 0;
+    border-radius: 1.75em;
+    margin-top: 1.75em;
+    font-size: 1rem;
+    color: #193574;
+  }
+}
+
+.copyright-text {
+  margin-top: 5.25em;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 1024px) {
+  .copyright-text {
+    margin-top: 4.66em;
+  }
+}
+
+/* our teams section */
+
+.our-teams {
+  background-color: #193574;
+}
+
+.our-teams img {
+  width: 45%;
+  border-radius: 50%;
+  margin-top: -30px;
+}
+
+.teams-card {
+  background-color: #f2f9f9;
+  width: 230px;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .teams-card {
+    width: 215px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .teams-card {
+    width: 220px;
+  }
+}
+
+.teams-card p img {
+  width: 22%;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.teams-card .linked-in-icon img {
+  margin-top: -5px;
+}
+
+.btn-volunteers {
+  background: #fff;
+  border-radius: 0.54em;
+  width: 11.36em;
+  height: 2.272em;
+  font-size: 1.374rem;
+  box-shadow: inset 0 0 0 #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-volunteers:hover {
+  box-shadow: inset 250px 0 0 0 #193574;
+}
+
+.btn-volunteers a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-volunteers:hover a {
+  color: #fff;
+}
+
+.side-heading {
+  position: absolute;
+  width: 3em;
+  background: #f0f2f6;
+  border-radius: 0px 0.88em 0.88em 0;
+  margin-top: 10%;
+  font-size: 2.125rem;
+  padding: 0.44em 0;
+}
+
+@media (max-width: 768px) {
+  .side-heading {
+    display: none !important;
+  }
+}
+
+.return-button {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 2%;
+  font-size: 2.625rem;
+}
+
+.return-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 426px) {
+  .return-button {
+    margin-top: 8%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .social-lead {
+    margin-top: 40px;
+  }
+}
+
+/* team Volunteers */
+
+.TeamVolunteers-block {
+  height: 100vh;
+  background-color: #f0f2f6;
+}
+
+.side-menu {
+  margin-left: -12px;
+  overflow: hidden;
+  height: 85vh;
+  border-radius: 0 0 25px 0;
+  box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.side-menu a {
+  color: #193574;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 30px 0 10px 30px;
+  position: relative;
+  font-weight: bold;
+}
+
+.side-menu a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  background: #000;
+  bottom: 0;
+  left: -10px;
+}
+
+table {
+  padding-left: 5px;
+  border-top: 1px solid #000;
+}
+
+tr {
+  border-bottom: 0.5px solid #000;
+}
+
+/* animation */
+
+.moveUp {
+  animation: moveUp 0.5s ease-in 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes moveUp {
+  0% {
+    margin-top: 150px;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
