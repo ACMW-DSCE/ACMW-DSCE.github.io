@@ -64,7 +64,7 @@ const linkObserverLighten = new IntersectionObserver( function( entries , linkOb
 const itemsObserver = new IntersectionObserver( function(entries , itemsObserver){
     entries.forEach(entry =>{
         if(!entry.isIntersecting){
-            entry.target.classList.remove("moveUp");
+           return;
         }else{
             entry.target.classList.add("moveUp");
         }
