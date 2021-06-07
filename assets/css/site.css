@@ -264,9 +264,15 @@ footer {
   background-size: cover;
 }
 
+@media (max-width: 426px) {
+  .footer-img-container {
+    margin-top: 2em;
+  }
+}
+
 @media (min-width: 768px) {
   footer {
-    height: 85vh;
+    height: 82vh;
   }
 }
 
