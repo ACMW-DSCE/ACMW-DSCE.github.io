@@ -5,5 +5,6 @@ function viewNumber(head){
 
     console.log(number);
 
+    number.style.display = "block";
     number.style.visibility = "visible";
 }

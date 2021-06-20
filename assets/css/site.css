@@ -172,7 +172,7 @@ header main {
 
 @media (min-width: 426px) {
   .about-us h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .about-us p {
@@ -209,6 +209,13 @@ header main {
     font-size: 14px;
     margin-bottom: -10px;
     visibility: hidden;
+  }
+
+  .heads-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -247,39 +254,31 @@ header main {
   cursor: pointer;
 }
 
-@media (max-width: 375px) {
-  .heads-card {
-    background-color: #f2f9f9;
-    width: 215px;
-    height: 325px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-}
-
 .heads-card h4 {
   font-size: 1.25rem;
-}
-
-.heads-card:hover {
-  box-shadow: 0px 4px 2px 2px #f2f9f9;
-  width: 235px;
-  height: 335px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .heads-card {
     width: 215px;
   }
+
+  .heads-card:hover {
+    box-shadow: 0px 4px 2px 2px #f2f9f9;
+    width: 235px;
+    height: 335px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
   .heads-card {
     width: 220px;
+  }
+
+  .heads-card:hover {
+    box-shadow: 0px 4px 2px 2px #f2f9f9;
+    width: 235px;
+    height: 335px;
   }
 }
 
@@ -297,6 +296,52 @@ header main {
     font-size: 1.5rem;
   }
 }
+
+/* our heads mobile */
+
+@media (max-width: 426px) {
+  .heads-card {
+    background-color: #193574;
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .heads-social {
+    display: none !important;
+  }
+
+  .heads-details {
+    width: 290px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+  }
+
+  .heads-details h4,
+  .heads-details p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .our-heads img {
+    width: 32%;
+    border-radius: 50%;
+  }
+
+  .whatsapp-number {
+    display: none;
+  }
+}
+
+/* our heads mobile ends */
 
 /* events section */
 
