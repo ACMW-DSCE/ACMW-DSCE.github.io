@@ -177,8 +177,16 @@ header main {
 
 .whatsapp-number {
   font-size: 14px;
-  margin-bottom: -10px;
+  margin-bottom: -5px;
   visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .whatsapp-number {
+    font-size: 14px;
+    margin-bottom: -10px;
+    visibility: hidden;
+  }
 }
 
 .our-heads {
@@ -216,7 +224,7 @@ header main {
   .heads-card {
     background-color: #f2f9f9;
     width: 215px;
-    height: 300px;
+    height: 325px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
