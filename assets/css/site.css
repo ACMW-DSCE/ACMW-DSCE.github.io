@@ -141,9 +141,24 @@ header main {
   scroll-margin-top: 3em;
 }
 
+.about-us-caption {
+  text-decoration: none;
+  margin-top: -20px;
+  font-size: 14px;
+  color: #000;
+}
+
 @media (min-width: 1440px) {
   .about-us {
     margin-top: -10px;
+  }
+
+  .about-us-caption {
+    text-decoration: none;
+    margin-top: -30px;
+    font-size: 14px;
+    margin-left: 50px;
+    color: #000;
   }
 }
 
@@ -151,13 +166,17 @@ header main {
   font-size: 2rem;
 }
 
-@media (min-width: 425px) {
+.about-us p {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 426px) {
   .about-us h2 {
     font-size: 3rem;
   }
 
   .about-us p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 
@@ -199,6 +218,10 @@ header main {
 
 .our-heads h2 {
   font-size: 2rem;
+}
+
+.heads-card svg {
+  width: 25px;
 }
 
 @media (min-width: 426px) {
@@ -288,7 +311,7 @@ header main {
 }
 
 .events-block h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 426px) {
@@ -342,7 +365,7 @@ footer h4 {
 }
 
 .icons {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
 }
@@ -352,30 +375,11 @@ footer h4 {
   margin-top: 4px;
 }
 
-@media (min-width: 375px) {
-  .instagram {
-    margin-left: -50px;
-    margin-top: 4px;
-  }
-}
-
-@media (min-width: 425px) {
-  .instagram {
-    margin-left: -58px;
-    margin-top: 4px;
-  }
-}
-
 @media (min-width: 768px) {
   .icons {
     width: 28%;
     display: flex;
     justify-content: space-between;
-  }
-
-  .instagram {
-    margin-left: -86px;
-    margin-top: 4px;
   }
 }
 
@@ -385,21 +389,11 @@ footer h4 {
     display: flex;
     justify-content: space-between;
   }
-
-  .instagram {
-    margin-left: -84px;
-    margin-top: 4px;
-  }
 }
 
 @media (min-width: 1440px) {
   .icons {
     width: 10%;
-  }
-
-  .instagram {
-    margin-left: -59px;
-    margin-top: 4px;
   }
 }
 
