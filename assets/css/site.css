@@ -10,6 +10,10 @@
   margin-top: 100px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* navigation */
 
 .navbar {
@@ -146,6 +150,7 @@ header main {
   margin-top: -20px;
   font-size: 14px;
   color: #000;
+  opacity: 0.5;
 }
 
 @media (min-width: 1440px) {
@@ -252,6 +257,7 @@ header main {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .heads-card h4 {
@@ -406,7 +412,8 @@ footer h4 {
 }
 
 .copy-rightText {
-  opacity: 0.8;
+  opacity: 0.5;
+  margin-top: 2em;
 }
 
 .icons {
@@ -466,7 +473,7 @@ footer h4 {
 
 .teams-card {
   background-color: #f2f9f9;
-  width: 230px;
+  width: 210px;
   height: 200px;
   border-radius: 15px;
   display: flex;
@@ -489,7 +496,7 @@ footer h4 {
 }
 
 .teams-card p img {
-  width: 22%;
+  width: 20%;
   border-radius: 5px;
   margin-top: 5px;
   margin-bottom: 10px;
