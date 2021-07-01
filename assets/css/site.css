@@ -262,7 +262,7 @@ header main {
 .heads-card {
   background-color: #f2f9f9;
   width: 225px;
-  height: 330px;
+  padding-top: 15px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
