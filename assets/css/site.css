@@ -281,12 +281,6 @@ header main {
     width: 215px;
   }
 
-  .heads-card:hover {
-    box-shadow: 0px 4px 2px 2px #f2f9f9;
-    width: 235px;
-    height: 335px;
-  }
-
   .our-heads a {
     color: #000;
   }
@@ -295,12 +289,6 @@ header main {
 @media (min-width: 1024px) and (max-width: 1440px) {
   .heads-card {
     width: 220px;
-  }
-
-  .heads-card:hover {
-    box-shadow: 0px 4px 2px 2px #f2f9f9;
-    width: 235px;
-    height: 335px;
   }
 
   .our-heads a {
