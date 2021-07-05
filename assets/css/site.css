@@ -474,20 +474,19 @@ footer h4 {
 }
 
 .our-teams img {
-  width: 45%;
-  border-radius: 50%;
+  width: 120px;
+  border-radius:15px;
   margin-top: -30px;
 }
 
 .teams-card {
   background-color: #f2f9f9;
-  width: 210px;
-  height: 200px;
+  width: 320px;
+  height: 170px;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 5em;
 }
 
